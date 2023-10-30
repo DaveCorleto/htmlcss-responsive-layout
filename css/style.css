@@ -8,20 +8,26 @@ body {
 .mega-container {
     max-width: 100%;
     box-sizing: border-box;
+    margin: auto;
 }
 
 header {
-    width: 100%;
+    max-width: 100%;
     background-color: rgb(110, 110, 245);
     height: 80px;
     padding: 15px;
     color: white;
     display: flex;
+    align-items: center;
     box-sizing: border-box;
+
 }
 
 .mobile {
     flex-basis:100%;
+}
+
+.mobile, .desk {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +35,8 @@ header {
 
 .desk {
     display: none;
+    width: 70%;
+    margin: auto;
 }
 
 header i {
@@ -36,30 +44,48 @@ header i {
     font-weight: 700;
 }
 
-.nav-left {flex-basis: 50%;}
-.nav-right {flex-basis: 50%;}
+/* .nav-left {flex-basis: 50%;}
+.nav-right {flex-basis: 50%;} */
+
+
+
+/* Bottoni  */
+
+.btn {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.white {
+    color: black;
+    background-color: white;
+}
+
 
 /* CSS RESPONSIVE DESKTOP  */
 
-/* @media all and (max-width: 1200px;) { 
-
-.mobile {
-    display: none;
-}
-
-.desk {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
     
-}
+@media all and (min-width:1201px){
 
-@media all and (min-width:1201px;){
+    header {padding: 0;}
     .desk {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .mobile {
         display: none;
     }
+    .nav-right ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+    }
+    
+    .nav-right li {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
