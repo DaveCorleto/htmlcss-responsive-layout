@@ -2,5 +2,64 @@ body {
     font-family: 'PT Sans', sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 0;
 }
 
+.mega-container {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(110, 110, 245);
+    height: 80px;
+    padding: 15px;
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.mobile {
+    flex-basis:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desk {
+    display: none;
+}
+
+header i {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.nav-left {flex-basis: 50%;}
+.nav-right {flex-basis: 50%;}
+
+/* CSS RESPONSIVE DESKTOP  */
+
+/* @media all and (max-width: 1200px;) { 
+
+.mobile {
+    display: none;
+}
+
+.desk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+    
+}
+
+@media all and (min-width:1201px;){
+    .desk {
+        display: flex;
+    }
+    .mobile {
+        display: none;
+    }
+}
