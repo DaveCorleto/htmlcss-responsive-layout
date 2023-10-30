@@ -56,11 +56,62 @@ header i {
     border-radius: 8px;
 }
 
+.blue {
+    background-color: rgb(51, 51, 255);
+    color: white;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
 .white {
     color: black;
     background-color: white;
 }
 
+/* Stili sezione Demo  */
+
+.row {
+    max-width: 100%;
+    padding-top: 25px;
+}
+
+.col {
+    padding: 10px;
+    max-width: 100%;
+}
+
+.card {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+    color: rgb(51, 51, 255);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.card h4 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.card p {
+    color: rgb(75, 69, 69);
+    font-weight: 700;
+    line-height: 30px;
+}
+.card img {
+    padding-top: 30px;
+    max-width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.btn .blue i {
+    padding: 15px;
+} 
 
 /* CSS RESPONSIVE DESKTOP  */
 
