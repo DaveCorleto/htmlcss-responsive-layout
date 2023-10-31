@@ -68,6 +68,10 @@ header i {
 
 /* Stili sezione Demo  */
 
+#demo {
+    max-width: 100%;
+}
+
 .row {
     max-width: 100%;
     padding-top: 25px;
@@ -123,17 +127,44 @@ header i {
 }
 
 .cont-strategic {
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     text-align: center;
     color: white;
+    box-sizing: border-box;
 }
 
 .cont-strategic img {
     display: block;
     max-width: 90%;
     margin: auto;
-    fill: rgb(167, 125, 206);
+}
+
+.cont-strategic h4 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.plan2 {
+    background-color: white;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.plan2 p {
+    padding-bottom: 30px;
+}
+
+
+.arrowdown {
+    color: white;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: violet;
 }
 
 /* CSS RESPONSIVE TABLET  */
@@ -168,6 +199,7 @@ header i {
 @media all and (min-width:769px){
 
     header {padding: 0;}
+
     .desk {
         display: flex;
         justify-content: space-between;
@@ -188,6 +220,11 @@ header i {
         padding-right: 10px;
     }
 
+    #demo {
+        max-width: 75%;
+        margin: auto;
+    }
+
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -200,4 +237,18 @@ header i {
         flex-basis: calc(100% / 1.5 - 40px);
     }
 
+    /* nella ver. desktop wrappa  */
+    .cont-strategic {
+        max-width: 75%;
+        margin: auto;
+        text-align: center;
+        color: white;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .plan1, .plan2 {
+        flex-basis: 45%;
+    }
 }
