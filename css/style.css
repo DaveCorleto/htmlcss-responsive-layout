@@ -167,6 +167,61 @@ header i {
     background-color: violet;
 }
 
+/* Sezione Testimonials  */
+
+.cont-test {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.cont-test h4 {
+    color: violet;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.cont-test h6 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-test {
+    background-color: violet;
+    border-radius: 30px;
+    color: white;
+}
+
+.card-test img {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+
+    
+}
+
+.img-card {
+    width: 50%;
+    margin: auto;
+    border-radius: 50%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mask {
+
+    background-color: violet;
+    margin: auto;
+    flex-basis: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 500;
+    
+}
+
 /* CSS RESPONSIVE TABLET  */
 
 @media all and (min-width:481px) and (max-width:768px){
