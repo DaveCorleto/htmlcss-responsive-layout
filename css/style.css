@@ -80,6 +80,9 @@ header i {
 .col, .col-xl {
     padding: 20px;
     max-width: 100%;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
 }
 
 .card {
@@ -90,6 +93,7 @@ header i {
     color: rgb(51, 51, 255);
     border-radius: 30px;
     padding: 10px;
+    
 }
 
 .card h4 {
@@ -219,6 +223,31 @@ header i {
     padding-bottom: 25px;
 }
 
+/* Sezione Benefits  */
+
+.benefits {
+    background-color: violet;
+}
+
+.bene-card {
+    color: violet;
+    flex-basis: 100%;
+    padding: 15px;
+    background-color: white;
+}
+
+.bene-card h2 {
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.violet {
+    color: white;
+    background-color: violet;
+}
+
+
+
 /* CSS RESPONSIVE TABLET  */
 
 @media all and (min-width:481px) and (max-width:768px){
@@ -262,8 +291,6 @@ header i {
     max-width: 60%;
 }
 
-
-}
 
 /* CSS RESPONSIVE DESKTOP  */
 
